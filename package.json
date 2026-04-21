@@ -1,5 +1,22 @@
 {
   "name": "tracelens",
-  "version": "0.0.0",
-  "private": true
+  "private": true,
+  "version": "0.0.1",
+  "description": "Open-source LLM observability and evaluation platform with first-class Azure OpenAI support. Self-hostable via docker compose",
+  "scripts": {
+    "dev:api": "pnpm --filter api dev",
+    "dev:web": "pnpm --filter web dev"
+  },
+  "keywords": [],
+  "author": "Rahul Mittal",
+  "license": "MIT",
+  "packageManager": "pnpm@10.33.0",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^8.59.0",
+    "@typescript-eslint/parser": "^8.59.0",
+    "eslint": "^10.2.1",
+    "eslint-config-prettier": "^10.1.8",
+    "prettier": "^3.8.3",
+    "typescript": "^6.0.3"
+  }
 }

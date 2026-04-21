@@ -1,1 +1,15 @@
-services: {}
+services:
+  postgres:
+    image: postgres:16
+    container_name: tracelens_postgres
+    environment:
+      POSTGRES_USER: tracelens
+      POSTGRES_PASSWORD: tracelens_password
+      POSTGRES_DB: tracelens_dev
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+volumes:
+  postgres_data:
