@@ -9,11 +9,20 @@ build/
 # Environment variables — never commit these
 .env
 .env.local
+.env.*
 .env.*.local
+!.env.example
+!.env.*.example
 
 # pnpm
 .pnpm-store/
 .pnpm-debug.log
+
+# Other package managers
+package-lock.json
+yarn.lock
+bun.lock
+bun.lockb
 
 # Logs
 *.log
